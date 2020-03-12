@@ -1,2 +1,4 @@
 dist
 .cache
+index.html
+node_modules
