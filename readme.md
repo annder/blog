@@ -1,6 +1,17 @@
 # Annex blog
 
-- 如何判断`Priomse`类型？
+## 目录
+
+[手写判断Promise类型](##如何判断`Priomse`类型？)
+
+[手写call](##手写一个`call`)
+
+[手写一个apply](##手写一个`apply`)
+
+[手写一个bind](##手写一个`bind`)
+
+
+## 如何判断`Priomse`类型？
 
 1. `Promise`带有`then`
 2. `Promise`的`constructor`是`Promise`
@@ -31,7 +42,7 @@ const toStringObject = value => Object.prototype.toString.call(value);
 const isSymbol = value => typeof value === 'symbol' && toStringObject(value);
 ```
 
-- 手写一个`call`
+## 手写一个`call`
 
 `call`的作用是为函数指定`this`作用域，然后此函数可以调用`this`作用域上的数据。
 
@@ -45,7 +56,7 @@ Function.prototype.__call = function(context = window) {
 };
 ```
 
-- 手写一个`apply`
+## 手写一个`apply`
 
 它和`call`的形式类似，但是不同的它第二个参数传递的是数组。
 
@@ -60,7 +71,7 @@ Function.prototype.__apply = function(context = window) {
 };
 ```
 
-- 手写一个`bind`
+## 手写一个`bind`
 
 它和`call`不同，因为它传入的是一个函数，所以需要返回一个函数来接受，但是有时候可能`new`一个新函数。
 
