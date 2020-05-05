@@ -17,6 +17,7 @@
 
 [手写一个 Promise A+](./markdowns/手写一个PromiseA+.md)
 
+
 </details>
 
 <details>
@@ -26,3 +27,8 @@
 
 </details>
 
+<details>
+  <summary>软技能</summary>
+
+  [git flow工作流](./markdowns/gitflow.md)
+</details>
